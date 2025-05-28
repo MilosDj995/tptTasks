@@ -102,7 +102,7 @@ public class DropdownPage extends Pages {
     }
 
     private void verifySelectedMultiSelectSport(String sport) {
-        if (sport == Sports.TENNIS) {
+        if (sport.equals(Sports.TENNIS)) {
             assertTrue(getTextElement(loc("div_class", Constant.VALUE)).contains("\n" + sport) || getTextElement(loc("div_class", Constant.VALUE)).startsWith(sport));
         } else {
             assertTrue(getTextElement(loc("div_class", Constant.VALUE)).contains(sport));

@@ -1,9 +1,6 @@
 package util;
 
 import Constants.Constant;
-import config.ConfigurationStrings;
-import org.openqa.selenium.WebDriver;
-
 import static util.LoggerManager.*;
 import static util.LocatorUtil.loc;
 

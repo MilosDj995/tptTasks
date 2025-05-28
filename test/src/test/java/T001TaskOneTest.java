@@ -1,25 +1,24 @@
+import util.Base;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import pages.DropdownPage;
-import util.Base;
+import pages.DialogsPage;
 import util.TestDrive;
 
-public class Task5Test extends Base {
+public class T001TaskOneTest extends Base {
 
-    private DropdownPage homePage;
     TestDrive testDrive = null;
 
     @BeforeEach
     public void setUpTest() {
         setUp();
-        homePage = new DropdownPage();
+        DialogsPage homePage = new DialogsPage();
         testDrive = new TestDrive(homePage);
     }
 
     @Test
-    public void taskFive() {
-        testDrive.runFunctionalTaskFifth();
+    public void taskOne() {
+        testDrive.runFunctionalTaskFirst();
 
 
     }

@@ -37,6 +37,7 @@ public class TestDrive {
         dialogHomePage.openAndLoadDialogsHomePage(ConfigurationStrings.URL_DIALOGS)
                 .clickOnOpenWindowDialogButton()
                 .verifyNameOfDialog()
+                .verifyContent()
                 .verifyMinimizeButtonOnAboutDialog()
                 .verifyMaximizeButtonOnAboutDialog()
                 .verifyCloseButtonOnAboutDialog()

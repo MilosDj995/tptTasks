@@ -105,7 +105,7 @@ public class GridPage extends Pages {
     public GridPage printNameJobPhoneAndAddressOfEmployees() {
         if (!checkIfRowElementsIsVisible()) return this;
         for (int i = 1; i <= getNumOfRowsFromTable(); i++) {
-            log(String.valueOf(i) + ".Name: " + getName(i) + ", Job title: " + getJobTitle(i) + ", Phone Number: " + getPhoneNumber(i)
+            log(i + ".Name: " + getName(i) + ", Job title: " + getJobTitle(i) + ", Phone Number: " + getPhoneNumber(i)
                     + ", Address: " + getAddress(i));
         }
         return this;
@@ -126,7 +126,7 @@ public class GridPage extends Pages {
     }
 
     private String getEmployeeActivity(int i) {
-        return getGridElement(i,TextElements.STATUS);
+        return getGridElement(i, TextElements.STATUS);
     }
 
     private boolean checkIfRowElementsIsVisible() {
@@ -139,7 +139,7 @@ public class GridPage extends Pages {
     }
 
     private String getName(int i) {
-        return getGridElement(i,TextElements.CONTACT_NAME);
+        return getGridElement(i, TextElements.CONTACT_NAME);
     }
 
     private List<String> getNames() {

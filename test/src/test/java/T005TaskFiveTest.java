@@ -1,26 +1,24 @@
-import config.ConfigurationStrings;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import pages.GridPage;
+import pages.DropdownPage;
 import util.Base;
 import util.TestDrive;
 
-public class Task3Test extends Base {
+public class T005TaskFiveTest extends Base {
 
-    private GridPage homePage;
     TestDrive testDrive = null;
 
     @BeforeEach
     public void setUpTest() {
-        setUp(ConfigurationStrings.FILE_PATH);
-        homePage = new GridPage();
+        setUp();
+        DropdownPage homePage = new DropdownPage();
         testDrive = new TestDrive(homePage);
     }
 
     @Test
-    public void taskThree() {
-        testDrive.runFunctionalTaskThird();
+    public void taskFive() {
+        testDrive.runFunctionalTaskFifth();
 
 
     }

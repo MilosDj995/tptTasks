@@ -1,8 +1,5 @@
 package Constants;
 
-import java.util.Arrays;
-import java.util.List;
-
 public class Constant {
 
     public static final String MINIMIZE = "Minimize";

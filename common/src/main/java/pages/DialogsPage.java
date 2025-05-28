@@ -9,7 +9,6 @@ import static util.LoggerManager.*;
 
 public class DialogsPage extends Pages {
 
-
     public DialogsPage openAndLoadDialogsHomePage(String url) {
         openAndLoadHomePage(url, loc("dropdownHomePage"));
         log("Home page is loaded succesfull");

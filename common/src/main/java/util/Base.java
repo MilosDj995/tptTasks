@@ -114,9 +114,11 @@ public class Base {
     public void waitForNotVisible(By locator, int timeoutInSeconds) {
         waitForElement(locator, timeoutInSeconds, false);
     }
-    public void waitForNotVisible(By locator, int timeoutInSeconds,String errorText) {
-        waitForElement(locator, timeoutInSeconds, false,errorText);
+
+    public void waitForNotVisible(By locator, int timeoutInSeconds, String errorText) {
+        waitForElement(locator, timeoutInSeconds, false, errorText);
     }
+
     public void verifyElementIsVisible(By locator, int timeoutInSeconds) {
         assertTrue(checkIfElementVisible(locator, timeoutInSeconds), "Element is not visible!!!");
     }
@@ -124,6 +126,7 @@ public class Base {
     public void verifyElementIsNotVisible(By locator, int timeoutInSeconds) {
         assertFalse(checkIfElementVisible(locator, timeoutInSeconds), "Element still visible!!!");
     }
+
     public void verifyElementIsVisible(By locator, int timeoutInSeconds, String errorMessage) {
         assertTrue(checkIfElementVisible(locator, timeoutInSeconds), errorMessage);
     }
@@ -131,6 +134,7 @@ public class Base {
     public void verifyElementIsNotVisible(By locator, int timeoutInSeconds, String errorMessage) {
         assertFalse(checkIfElementVisible(locator, timeoutInSeconds), errorMessage);
     }
+
     public static void waitForElement(By locator, int timeoutInSeconds, boolean isVisible) {
         WebDriverWait wait = new WebDriverWait(getDriver(), timeoutInSeconds);
         try {
@@ -214,9 +218,11 @@ public class Base {
     public void verifyTextElement(By locator, String text) {
         assertEquals(getTextElement(locator), text);
     }
+
     private void verifyElementValue(By locator, String text) {
         assertEquals(getDriver().findElement(locator).getAttribute("value"), text);
     }
+
     public void enterInputField(By locator, String text) {
         clearInputField(locator);
         WebElement element = getDriver().findElement(locator);
@@ -248,7 +254,7 @@ public class Base {
         int waited = 0;
         while ((tempFile.exists() || !downloadedFile.exists()) && waited < timeoutInSeconds) {
             try {
-                Thread.sleep(1000); // čekaj 1 sekundu
+                Thread.sleep(1000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
