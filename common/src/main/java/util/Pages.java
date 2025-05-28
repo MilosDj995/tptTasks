@@ -1,6 +1,6 @@
 package util;
 
-import Constants.Constant;
+import constants.Constant;
 
 import static util.LocatorUtil.loc;
 

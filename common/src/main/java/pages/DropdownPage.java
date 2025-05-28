@@ -1,7 +1,7 @@
 package pages;
 
-import Constants.Constant;
-import Data.Sports;
+import constants.Constant;
+import data.Sports;
 import org.openqa.selenium.WebElement;
 import util.Pages;
 

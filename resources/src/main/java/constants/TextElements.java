@@ -1,4 +1,4 @@
-package Constants;
+package constants;
 
 public class TextElements {
     public static final String ABOUT_WINDOW_NAME = "About";

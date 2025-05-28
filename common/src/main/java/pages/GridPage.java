@@ -1,9 +1,9 @@
 package pages;
 
-import Constants.Constant;
-import Data.Country;
+import constants.Constant;
+import data.Country;
 import config.ConfigurationStrings;
-import Constants.TextElements;
+import constants.TextElements;
 import org.openqa.selenium.By;
 import util.Pages;
 

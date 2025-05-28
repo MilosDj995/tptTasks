@@ -1,6 +1,6 @@
 package util;
 
-import Data.Sports;
+import data.Sports;
 import config.ConfigurationStrings;
 import pages.DialogsPage;
 import pages.DropdownPage;

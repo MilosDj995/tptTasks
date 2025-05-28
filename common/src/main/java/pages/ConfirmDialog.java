@@ -1,7 +1,7 @@
 package pages;
 
-import Constants.Constant;
-import Data.Colors;
+import constants.Constant;
+import data.Colors;
 import util.Dialog;
 
 import static util.LoggerManager.*;

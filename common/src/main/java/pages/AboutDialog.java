@@ -1,7 +1,7 @@
 package pages;
 
-import Constants.Constant;
-import Constants.TextElements;
+import constants.Constant;
+import constants.TextElements;
 import util.Dialog;
 
 import static util.LoggerManager.*;
