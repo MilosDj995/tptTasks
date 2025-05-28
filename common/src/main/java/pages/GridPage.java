@@ -173,7 +173,7 @@ public class GridPage extends Pages {
     }
 
     public GridPage downloadExcelFile() {
-        driver.findElement(By.cssSelector("button.k-button.k-grid-excel")).click();
+        clickOnElement(loc("downloadExcelFileButton"));
         waitForFileDownload(ConfigurationStrings.FILE_PATH, ConfigurationStrings.FILE_NAME, 30);
         log("File is downloaded");
         return this;
